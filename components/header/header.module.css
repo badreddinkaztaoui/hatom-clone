@@ -1,0 +1,58 @@
+.header {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  top: 0;
+}
+
+.header .content {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .content .links {
+  display: flex;
+  align-items: center;
+}
+
+.header .content .links .link {
+  margin-inline-end: 20px;
+}
+
+.header .content .links .link > a {
+  font-size: 14px;
+  font-family: "HatomMedium";
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+.header .content .links .link > a::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0%;
+  top: 20px;
+  left: 0;
+  height: 2px;
+  background-color: rgb(53, 85, 247);
+}
+
+.header .content .links .link > a:hover {
+  transition: all 0.2s linear;
+  color: rgb(53, 85, 247);
+}
+
+.header .content .links .link > a:hover::after {
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
+.header .content .buttons {
+  display: flex;
+  align-items: center;
+}

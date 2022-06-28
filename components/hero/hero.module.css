@@ -1,0 +1,57 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper .scene,
+.wrapper .doctors,
+.wrapper .over_light {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.wrapper .coin_container {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  transform: translateY(-50%);
+  transition: all 0.2s linear;
+}
+
+.wrapper .coin_container .coin {
+  background-size: 100%;
+  background-image: url("/images/img65.png");
+  margin-right: -6.61376vw;
+  background-position-y: 0%;
+  width: 18vw;
+  height: 18vw;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition: all 0.2s ease-in-out;
+}
+
+.wrapper .over_light {
+  z-index: 30;
+}
+
+.wrapper .title {
+  position: absolute;
+  z-index: 40;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.wrapper .title .subtitle {
+  color: #3d906a;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
